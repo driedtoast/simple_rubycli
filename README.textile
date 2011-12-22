@@ -1,5 +1,7 @@
 
 Need to do the following:
 
-- "gem build simplecli.gemspec"
+* Building - gem build simplecli.gemspec
+* Install - gem install simplecli-1.gem
+* Run - simplecli hello world
 
