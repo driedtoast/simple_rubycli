@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+$:.unshift File.expand_path("../../lib", __FILE__)
+
+require 'simple/commands'
+args = ARGV.dup
+ARGV.clear
+command = args.shift.strip rescue 'help'
+Simple::Commands.load()
+Simple::Commands.run(command, args)
