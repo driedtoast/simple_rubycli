@@ -1,12 +1,7 @@
-module Simple
-module Commands
-class NoCommand
-  def self.load()
-  end
+require "simple/commands"
 
-  def self.run(args)
+class Simple::Commands::NoCommand
+  def self.help()
     puts "Help with options"
   end
-end
-end
 end

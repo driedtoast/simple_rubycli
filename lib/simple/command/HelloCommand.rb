@@ -1,16 +1,11 @@
+require "simple/commands"
 
-module Simple 
-  module Commands
-  
-  class HelloCommand 
-    def self.load()
-    end
-  
-    def run(args=[])
-      puts "hello world"
-      puts args
-    end
+class Simple::Commands::HelloCommand < Simple::Commands::BaseCommand
+  def self.load()
   end
-  
+
+  def run(args=[])
+    puts "hello world"
+    puts args
   end
 end
